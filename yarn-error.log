@@ -1,0 +1,63 @@
+Arguments: 
+  /Users/admin/.nvm/versions/node/v16.13.2/bin/node /Users/admin/.nvm/versions/node/v14.18.3/bin/yarn
+
+PATH: 
+  /Users/admin/.nvm/versions/node/v16.13.2/bin:/usr/local/mongodb/bin:/Users/admin/.nvm/versions/node/v14.18.3/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/mongodb/bin:/Users/admin/.nvm/versions/node/v14.18.3/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmmirror.com/@aws-cdk/cfnspec/-/cfnspec-2.8.0.tgz: Request failed "504 Gateway Timeout"
+      at ResponseError.ExtendableBuiltin (/Users/admin/.nvm/versions/node/v14.18.3/lib/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/Users/admin/.nvm/versions/node/v14.18.3/lib/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/Users/admin/.nvm/versions/node/v14.18.3/lib/node_modules/yarn/lib/cli.js:67099:16)
+      at Request.emit (node:events:390:28)
+      at Request.module.exports.Request.onRequestResponse (/Users/admin/.nvm/versions/node/v14.18.3/lib/node_modules/yarn/lib/cli.js:141760:10)
+      at ClientRequest.emit (node:events:390:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:623:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+      at HTTPParser.execute (<anonymous>)
+      at TLSSocket.socketOnData (node:_http_client:487:22)
+
+npm manifest: 
+  {
+    "name": "ci-cd-aws-pipeline-demo",
+    "version": "0.1.0",
+    "bin": {
+      "ci-cd-aws-pipeline-demo": "bin/ci-cd-aws-pipeline-demo.js"
+    },
+    "scripts": {
+      "build": "tsc",
+      "watch": "tsc -w",
+      "test": "jest",
+      "cdk": "cdk"
+    },
+    "devDependencies": {
+      "@types/jest": "^26.0.10",
+      "@types/node": "10.17.27",
+      "aws-cdk": "2.8.0",
+      "jest": "^26.4.2",
+      "jest-junit": "^13.0.0",
+      "ts-jest": "^26.2.0",
+      "ts-node": "^9.0.0",
+      "typescript": "~3.9.7"
+    },
+    "dependencies": {
+      "aws-cdk-lib": "2.8.0",
+      "constructs": "^10.0.0",
+      "source-map-support": "^0.5.16"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

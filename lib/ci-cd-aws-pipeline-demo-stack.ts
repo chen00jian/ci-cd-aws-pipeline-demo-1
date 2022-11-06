@@ -21,7 +21,7 @@ export class CiCdAwsPipelineDemoStack extends cdk.Stack {
 
 
     const testingStage = pipeline.addStage(new MyPipelineAppStage(this, "test", {
-      env: { account: "244883597250", region: "us-east-1" }
+      env: { account: "244883597250", region: "ap-southeast-1" }
     }));
 
 
@@ -29,7 +29,7 @@ export class CiCdAwsPipelineDemoStack extends cdk.Stack {
     testingStage.addPost(new ManualApprovalStep('Manual approval before production'));
 
     const prodStage = pipeline.addStage(new MyPipelineAppStage(this, "prod", {
-      env: { account: "244883597250", region: "us-east-1" }
+      env: { account: "244883597250", region: "ap-southeast-1" }
     }));
   }
 }
